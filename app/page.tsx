@@ -15,11 +15,11 @@ export default function Home() {
       <main className=" flex flex-col overflow-hidden">
       <Meteors/>
       <Intro/>
+      <CustomDock orientation={"vertical"} />
       <WorkExperience/>
       <Skills/>
       <Projects/>
       {/* <Navbar /> */}
-      <CustomDock orientation={"vertical"} />
       </main>
     </div>
   );

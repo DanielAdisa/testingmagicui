@@ -114,7 +114,7 @@ export function CustomDock({
       }
     },[])
   return (
-    <div className={isMobile ? "fixed flex bottom-2 justify-center inset-0 items-end" :"fixed inset-0 top-1/2 bottom-1/2 flex items-center right-[85%] left-40 " }>
+    <div className={isMobile ? "fixed flex -top-5 justify-center inset-0 items-start z-50" :"fixed inset-0 top-1/2 bottom-1/2 flex items-center right-[85%] left-40 " }>
     
       
       <TooltipProvider>
