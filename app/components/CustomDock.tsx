@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { CalendarIcon, HomeIcon, InstagramIcon, MailIcon, Moon, PencilIcon, Sun } from "lucide-react";
+import { CalendarIcon, DownloadCloudIcon, GoalIcon, HomeIcon, InstagramIcon, MailIcon, Moon, PencilIcon, PhoneCallIcon, SofaIcon, Sun } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
@@ -24,6 +24,7 @@ export type IconProps = React.HTMLAttributes<SVGElement>;
 
 const Icons = {
   calendar: (props: IconProps) => <CalendarIcon {...props} />,
+  google: (props: IconProps) => <PhoneCallIcon {...props} />,
   email: (props: IconProps) => <MailIcon {...props} />,
   linkedin: (props: IconProps) => (
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
@@ -75,22 +76,22 @@ const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "#",
+        url: "https://github.com/DanielAdisa/",
         icon: Icons.github,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "#",
+        url: "https://www.linkedin.com/in/daniel-oluwatobi-adisa-7b076a199/",
         icon: Icons.linkedin,
       },
-      X: {
-        name: "X",
-        url: "#",
-        icon: Icons.youtube,
+      google: {
+        name: "google",
+        url: "https://wa.me/message/V4TC5GSQTN7RM1",
+        icon: Icons.google,
       },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "mailto:adisadaniel4@gmail.com",
         icon: Icons.email,
       },
     },
@@ -133,7 +134,7 @@ export function CustomDock({
                     }
     },[])
   return (
-    <div className={isMobile && header ? "fixed hidden  -top-5 justify-center inset-0 items-start z-50" :"fixed flex -top-8 justify-center items-start z-50   inset-0 md:top-1/2 md:bottom-1/2 md:items-center md:right-[85%] md:left-40 " }>
+    <div className={isMobile && header ? "fixed hidden  -top-5 justify-center inset-0 items-start h-fit z-50" :"fixed flex -top-8 justify-center items-start z-50   inset-0 md:top-1/2 h-fit md:bottom-1/2 md:items-center md:right-[85%] md:left-40 " }>
     
       
       <TooltipProvider>
