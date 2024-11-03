@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { CalendarIcon, HomeIcon, MailIcon, Moon, PencilIcon, Sun } from "lucide-react";
+import { CalendarIcon, HomeIcon, InstagramIcon, MailIcon, Moon, PencilIcon, Sun } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
@@ -18,6 +18,9 @@ import { Dock, DockIcon } from "@/components/ui/dock";
 import { useTheme } from "next-themes";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
+
+
+
 
 const Icons = {
   calendar: (props: IconProps) => <CalendarIcon {...props} />,
@@ -66,7 +69,7 @@ const Icons = {
 const DATA = {
   navbar: [
     { href: "#", icon: HomeIcon, label: "Home" },
-    { href: "#", icon: PencilIcon, label: "Blog" },
+    { href: "https://www.instagram.com/daniel.made.it?igsh=MXY2Nmt3bWRvaHJxdQ==", icon: InstagramIcon, label: "Blog" },
   ],
   contact: {
     social: {
@@ -83,7 +86,7 @@ const DATA = {
       X: {
         name: "X",
         url: "#",
-        icon: Icons.x,
+        icon: Icons.youtube,
       },
       email: {
         name: "Send Email",
@@ -113,8 +116,24 @@ export function CustomDock({
         window.removeEventListener("resize", handleResize)
       }
     },[])
+
+    const [header , setHeader] = useState(false);
+    const scrollHeader = () => {
+        if(window.scrollY >= 5000){
+            setHeader(true);
+        }else{
+            setHeader(false);
+        }
+    }
+
+    useEffect(() =>{
+        window.addEventListener('scroll', scrollHeader);
+        return () => {
+            window.removeEventListener('scroll', scrollHeader);
+                    }
+    },[])
   return (
-    <div className={isMobile ? "fixed flex -top-5 justify-center inset-0 items-start z-50" :"fixed inset-0 top-1/2 bottom-1/2 flex items-center right-[85%] left-40 " }>
+    <div className={isMobile && header ? "fixed hidden  -top-5 justify-center inset-0 items-start z-50" :"fixed flex -top-8 justify-center items-start z-50   inset-0 md:top-1/2 md:bottom-1/2 md:items-center md:right-[85%] md:left-40 " }>
     
       
       <TooltipProvider>

@@ -22,8 +22,8 @@ const Projects = () => {
                 </div>
                 </div>
               </Link>
-              <Link href={item.link} >
-                <Button  className=" w-full p-2 md:hidden mt-4"></Button>
+              <Link href={item.link}  >
+                <Button   className=" w-full p-2 md:hidden mt-4">Link to Build</Button>
               </Link>
             </div>
         ))}
