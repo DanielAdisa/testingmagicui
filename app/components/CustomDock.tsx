@@ -134,7 +134,7 @@ export function CustomDock({
                     }
     },[])
   return (
-    <div className={isMobile && header ? "fixed hidden  -top-5 justify-center inset-0 items-start h-fit z-50" :"fixed flex -top-8 justify-center items-start z-50   inset-0 md:top-1/2 h-fit md:bottom-1/2 md:items-center md:right-[85%] md:left-40 " }>
+    <div className={isMobile && header ? "fixed hidden  -top-5 justify-center inset-0 items-start h-fit z-50" :"fixed flex -top-8 md:justify-center items-start z-50   inset-0 md:top-[25%] md:bottom-[25%] md:h-fit  md:items-center md:right-[85%] md:left-40 " }>
     
       
       <TooltipProvider>

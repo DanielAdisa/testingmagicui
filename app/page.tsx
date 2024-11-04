@@ -8,6 +8,7 @@ import Meteors from "@/components/ui/meteors";
 import WorkExperience from "./components/WorkExperience";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Gallery from "./components/Gallery";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <WorkExperience/>
       <Skills/>
       <Projects/>
+      <Gallery/>
       {/* <Navbar /> */}
       </main>
     </div>

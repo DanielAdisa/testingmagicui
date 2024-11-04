@@ -52,43 +52,48 @@ export const EXPERIENCES = [
   
 ];
 
-// export const PROJECTS = [
-//   {
-//     title: "Desire",
-//     image: desire,
-//     description:
-//     "A flame that burns so bright and wild. Desire's dance, a treacherous child. It leads us on, a siren's song, To paths where hearts may go astray and wrong.",
-//     technologies: ["Blender", "PhotoShop", "DAZ-3D"],
-//   },
-//   {
-//     title: "Who is Oglav? A guardian or a threat?",
-//     image: oglav,
-//     description:
-//       "A monstrous figure, draped in shadows deep, with antlers reaching towards the fiery sky. His eyes, like embers, watch the world asleep, a guardian of the realms beyond the eye. His skin, a molten mass, both dark and bright, a testament to power, wild and free. A necklace of skulls, a chilling sight, a symbol of his dominion, wild and seething. With claws that rend and fangs that bite, he stands as sentinel, a fearsome sight. A guardian of the unknown, the dark and night, a force of nature, both pure and spite.",
-//     technologies: ["Blender", "PhotoShop", "DAZ-3D", "Mixamo"],
-//   },
-//   {
-//     title: "Sus Flowers",
-//     image: flower7,
-//     description:
-//       "In shadowed depths, a flower gleams, A silhouette, a joyful dream. With glowing eyes and cheerful smile, It lights the darkness, mile by mile. Beside it, others, green and bright, In pots of clay, a wondrous sight. Though small and dark, their spirits soar, A beacon of hope, forevermore. In this dim world, where fears reside, Their glowing forms, a guiding tide. A symbol of joy, a constant friend, Their light will shine until the end.",
-//     technologies: ["Blender", "PhotoShop", "Substance Painter"],
-//   },
-//   {
-//     title: "All Hail D.O.O.M",
-//     image: doom,
-//     description:
-//       "A fiery wheel, a glowing gate, in twilight's grasp, a haunting sight. Through misty woods, a solemn trail, where shadows dance and secrets wail. A group of souls, in shadows deep, toward the portal, they do creep. With hearts ablaze and spirits torn, they seek the answers they've been born. Beyond the gate, a world unknown, a realm of darkness, where shadows groan. But hope still flickers, a guiding light, as they step into the endless night.",
-//     technologies: ["Blender", "PhotoShop", "DAZ-3D", "Mixamo"],
-//   },
-//   {
-//     title: "Lost in the Melody",
-//     image: melody,
-//     description:
-//       "In the music's gentle flow, I find a world where I can go, Where worries fade and cares subside, And all the troubles of the day, Simply drift away.",
-//     technologies: ["Blender", "PhotoShop", "Cinema 4D"],
-//   },
-// ];
+export const PROJECTS = [
+  {
+    title: "Desire",
+    image: desire,
+    description:
+    "A flame that burns so bright and wild. Desire's dance, a treacherous child. It leads us on, a siren's song, To paths where hearts may go astray and wrong.",
+    technologies: ["Blender", "PhotoShop", "DAZ-3D"],
+    link: "https://daniels-porfolio.vercel.app/",
+  },
+  {
+    title: "Who is Oglav? A guardian or a threat?",
+    image: oglav,
+    description:
+      "A monstrous figure, draped in shadows deep, with antlers reaching towards the fiery sky. His eyes, like embers, watch the world asleep, a guardian of the realms beyond the eye. His skin, a molten mass, both dark and bright, a testament to power, wild and free. A necklace of skulls, a chilling sight, a symbol of his dominion, wild and seething. With claws that rend and fangs that bite, he stands as sentinel, a fearsome sight. A guardian of the unknown, the dark and night, a force of nature, both pure and spite.",
+    technologies: ["Blender", "PhotoShop", "DAZ-3D", "Mixamo"],
+    link: "https://daniels-porfolio.vercel.app/",
+  },
+  {
+    title: "Sus Flowers",
+    image: flower7,
+    description:
+      "In shadowed depths, a flower gleams, A silhouette, a joyful dream. With glowing eyes and cheerful smile, It lights the darkness, mile by mile. Beside it, others, green and bright, In pots of clay, a wondrous sight. Though small and dark, their spirits soar, A beacon of hope, forevermore. In this dim world, where fears reside, Their glowing forms, a guiding tide. A symbol of joy, a constant friend, Their light will shine until the end.",
+    technologies: ["Blender", "PhotoShop", "Substance Painter"],
+    link: "https://daniels-porfolio.vercel.app/",
+  },
+  {
+    title: "All Hail D.O.O.M",
+    image: doom,
+    description:
+      "A fiery wheel, a glowing gate, in twilight's grasp, a haunting sight. Through misty woods, a solemn trail, where shadows dance and secrets wail. A group of souls, in shadows deep, toward the portal, they do creep. With hearts ablaze and spirits torn, they seek the answers they've been born. Beyond the gate, a world unknown, a realm of darkness, where shadows groan. But hope still flickers, a guiding light, as they step into the endless night.",
+    technologies: ["Blender", "PhotoShop", "DAZ-3D", "Mixamo"],
+    link: "https://daniels-porfolio.vercel.app/",
+  },
+  {
+    title: "Lost in the Melody",
+    image: melody,
+    description:
+      "In the music's gentle flow, I find a world where I can go, Where worries fade and cares subside, And all the troubles of the day, Simply drift away.",
+    technologies: ["Blender", "PhotoShop", "Cinema 4D"],
+    link: "https://daniels-porfolio.vercel.app/",
+  },
+];
 
 export const PROJECTSDEV = [
   {

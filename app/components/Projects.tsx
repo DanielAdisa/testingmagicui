@@ -17,7 +17,7 @@ const Projects = () => {
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{item.description}</p>
                 <div className=" flex gap-2 flex-wrap">
                 {item.technologies.map((tech, index) => (
-                    <Button key={index} variant={"secondary"} className=" md:hidden">{tech}</Button>
+                    <Button key={index} variant={"secondary"} className=" md:hidde">{tech}</Button>
                 ))}
                 </div>
                 </div>
