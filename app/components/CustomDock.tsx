@@ -69,7 +69,7 @@ const Icons = {
 
 const DATA = {
   navbar: [
-    { href: "#", icon: HomeIcon, label: "Home" },
+    { href: "/", icon: HomeIcon, label: "Home" },
     { href: "https://www.instagram.com/daniel.made.it?igsh=MXY2Nmt3bWRvaHJxdQ==", icon: InstagramIcon, label: "Blog" },
   ],
   contact: {

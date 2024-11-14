@@ -93,6 +93,53 @@
 // };
 
 // export default page;
+// "use client";
+
+// import { notFound } from 'next/navigation';
+// import { PROJECTS } from '@/app/constants/index';
+// import Image from 'next/image';
+// import { use } from 'react';
+
+// const ProjectPage = ({ params }: { params: Promise<{ id: string }> }) => {
+//     // Unwrap params using React's use hook (this is required for async params)
+//     const { id } = use(params);
+  
+//     // Find the project based on the unwrapped id
+//     const project = PROJECTS.find((p) => p.id === id);
+  
+//     if (!project) {
+//         notFound(); // Trigger a 404 page if the project is not found
+//     }
+  
+//     return (
+//         <div className="min-h-screen  bg-gray-50 dark:bg-slate-800">
+//             {/* Project Header Image Section */}
+//             <div className="relative w-full h-96 md:h-screen">
+//                 <Image
+//                     src={project.image}
+//                     alt={`Project ${project.id}`}
+//                     layout="fill"
+//                     objectFit=" cover"
+//                     className="rounded-lg shadow-md"
+//                 />
+//                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-75" />
+//                 <div className="absolute bottom-5 left-5 text-white px-4">
+//                     <h1 className="text-3xl md:text-4xl font-semibold">{project.title}</h1>
+//                 </div>
+//             </div>
+  
+//             {/* Project Details Section */}
+//             <div className="px-6 py-10 md:py-16 bg-white shadow-lg rounded-lg mx-auto mt-8 max-w-2xl">
+//                 <h2 className="text-2xl md:text-3xl font-bold text-gray-800">{project.title}</h2>
+//                 {/* <p className="text-sm text-gray-500 mt-2 mb-6">{project.date}</p> */}
+//                 <p className="text-lg text-gray-700 leading-relaxed">{project.description}</p>
+//             </div>
+//         </div>
+//     );
+// };
+
+// export default ProjectPage;
+
 "use client";
 
 import { notFound } from 'next/navigation';
@@ -101,38 +148,40 @@ import Image from 'next/image';
 import { use } from 'react';
 
 const ProjectPage = ({ params }: { params: Promise<{ id: string }> }) => {
-    // Unwrap params using React's use hook (this is required for async params)
     const { id } = use(params);
-  
-    // Find the project based on the unwrapped id
     const project = PROJECTS.find((p) => p.id === id);
-  
+
     if (!project) {
-        notFound(); // Trigger a 404 page if the project is not found
+        notFound();
     }
-  
+
     return (
-        <div className="min-h-screen bg-gray-50 dark:bg-slate-800">
-            {/* Project Header Image Section */}
-            <div className="relative w-full h-96 md:h-screen">
+        <div className="min-h-screen bg-gray-100 dark:bg-slate-900">
+            {/* Header Image Section */}
+            <div className="relative w-full h-[75vh] md:h-screen overflow-hidden">
                 <Image
                     src={project.image}
                     alt={`Project ${project.id}`}
                     layout="fill"
-                    objectFit="contain"
-                    className="rounded-lg shadow-md"
+                    objectFit="cover"
+                    className="transition-transform duration-700 hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-75" />
-                <div className="absolute bottom-5 left-5 text-white px-4">
-                    <h1 className="text-3xl md:text-4xl font-semibold">{project.title}</h1>
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black opacity-75" />
+                <div className="absolute bottom-8 left-8 text-white px-4">
+                    <h1 className="text-4xl md:text-5xl font-bold animate-fade-in-up">{project.title}</h1>
+                    <p className="text-lg font-light mt-4 opacity-80">An immersive journey into {project.title}</p>
                 </div>
             </div>
-  
+
             {/* Project Details Section */}
-            <div className="px-6 py-10 md:py-16 bg-white shadow-lg rounded-lg mx-auto mt-8 max-w-2xl">
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-800">{project.title}</h2>
-                {/* <p className="text-sm text-gray-500 mt-2 mb-6">{project.date}</p> */}
-                <p className="text-lg text-gray-700 leading-relaxed">{project.description}</p>
+            <div className="px-6 py-12 md:py-20 bg-white dark:bg-slate-800 shadow-xl rounded-lg mx-auto mt-12 max-w-3xl transform transition duration-500 ease-in-out hover:shadow-2xl">
+                <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 dark:text-white text-center mb-6">{project.title}</h2>
+                <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed text-center md:mt-4">
+                    {project.description}
+                </p>
+                <p className="text-sm md:text-base text-gray-600 dark:text-gray-400 italic mt-8 text-center">
+                    Presented with passion and precision.
+                </p>
             </div>
         </div>
     );
