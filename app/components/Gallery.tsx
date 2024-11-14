@@ -19,7 +19,7 @@ const Gallery = () => {
             <div key={index} className="">
                     <h1 className=" hidden md:bloc text-center">{item.title}</h1>
                     <Image className="h-fit max-w-full rounded-lg  transition-all ease-in-out" src={item.image}  alt=""></Image>
-                <Link href={item.link} className=" font-great text-[24px]">
+                <Link href={`/components/${item.id}`} className=" font-great text-[24px]">
                     <Button variant={"outline"} className=" dark:border-[2px] border-stone-900 dark:border-stone-100 md:hidde w-full dark:text-stone-100 h-auto font-grey-med mt-2 p-4 ">{index+1}</Button>
                 </Link>
             </div>

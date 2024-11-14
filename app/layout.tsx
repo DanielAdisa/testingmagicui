@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 import Providers from "./providers";
+import CustomDock from "./components/CustomDock";
 
 
 
@@ -20,7 +21,8 @@ export default function RootLayout({
       <body
         className={` font-grey-reg antialiased`}
       >
-       <Providers>{children}</Providers> 
+        <Providers><CustomDock orientation={"vertical"} />
+       {children}</Providers> 
       </body>
     </html>
   );

@@ -67,6 +67,7 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    id: '1',
     title: "Desire",
     image: image1,
     description:
@@ -75,6 +76,7 @@ export const PROJECTS = [
     link: "https://daniels-porfolio.vercel.app/",
   },
   {
+    id: '2',
     title: "Desire",
     image: image2,
     description:
@@ -83,6 +85,7 @@ export const PROJECTS = [
     link: "https://daniels-porfolio.vercel.app/",
   },
   {
+    id: '3',
     title: "Desire",
     image: image4,
     description:
@@ -91,6 +94,7 @@ export const PROJECTS = [
     link: "https://daniels-porfolio.vercel.app/",
   },
   {
+    id: '4',
     title: "Desire",
     image: image5,
     description:
@@ -99,6 +103,7 @@ export const PROJECTS = [
     link: "https://daniels-porfolio.vercel.app/",
   },
   {
+    id: '5',
     title: "Desire",
     image: image6,
     description:
@@ -107,6 +112,7 @@ export const PROJECTS = [
     link: "https://daniels-porfolio.vercel.app/",
   },
   {
+    id: '6',
     title: "Desire",
     image: image7,
     description:
@@ -115,6 +121,7 @@ export const PROJECTS = [
     link: "https://daniels-porfolio.vercel.app/",
   },
   {
+    id: '7',
     title: "Who is Oglav? A guardian or a threat?",
     image: oglav,
     description:
@@ -123,6 +130,7 @@ export const PROJECTS = [
     link: "https://daniels-porfolio.vercel.app/",
   },
   {
+    id: '8',
     title: "Sus Flowers",
     image: flower7,
     description:
@@ -131,6 +139,7 @@ export const PROJECTS = [
     link: "https://daniels-porfolio.vercel.app/",
   },
   {
+    id: '9',
     title: "All Hail D.O.O.M",
     image: doom,
     description:
@@ -139,6 +148,7 @@ export const PROJECTS = [
     link: "https://daniels-porfolio.vercel.app/",
   },
   {
+    id: '10',
     title: "Lost in the Melody",
     image: melody,
     description:
@@ -147,6 +157,7 @@ export const PROJECTS = [
     link: "https://daniels-porfolio.vercel.app/",
   },
   {
+    id: '11',
     title: "Desire",
     image: desire,
     description:
@@ -155,6 +166,7 @@ export const PROJECTS = [
     link: "https://daniels-porfolio.vercel.app/",
   },
   {
+    id: '12',
     title: "Desire",
     image: image8,
     description:
@@ -163,6 +175,7 @@ export const PROJECTS = [
     link: "https://daniels-porfolio.vercel.app/",
   },
   {
+    id: '13',
     title: "Desire",
     image: image9,
     description:
@@ -171,6 +184,7 @@ export const PROJECTS = [
     link: "https://daniels-porfolio.vercel.app/",
   },
   {
+    id: '14',
     title: "Desire",
     image: image10,
     description:
@@ -179,6 +193,7 @@ export const PROJECTS = [
     link: "https://daniels-porfolio.vercel.app/",
   },
   {
+    id: '15',
     title: "Desire",
     image: image11,
     description:
@@ -188,6 +203,7 @@ export const PROJECTS = [
   },
   
   {
+    id: '16',
     title: "Desire",
     image: image12,
     description:
@@ -196,6 +212,7 @@ export const PROJECTS = [
     link: "https://daniels-porfolio.vercel.app/",
   },
   {
+    id: '17',
     title: "Desire",
     image: image13,
     description:
@@ -204,6 +221,7 @@ export const PROJECTS = [
     link: "https://daniels-porfolio.vercel.app/",
   },
   {
+    id: '18',
     title: "Desire",
     image: image14,
     description:
