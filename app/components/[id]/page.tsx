@@ -158,7 +158,7 @@ const ProjectPage = ({ params }: { params: Promise<{ id: string }> }) => {
     return (
         <div className="min-h-screen bg-gray-100 dark:bg-slate-900">
             {/* Header Image Section */}
-            <div className="relative w-full h-[75vh] md:h-screen overflow-hidden">
+            <div className="relative w-full h-[50vh] md:h-screen overflow-hidden">
                 <Image
                     src={project.image}
                     alt={`Project ${project.id}`}
@@ -167,14 +167,14 @@ const ProjectPage = ({ params }: { params: Promise<{ id: string }> }) => {
                     className="transition-transform duration-700 hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black opacity-75" />
-                <div className="absolute bottom-8 left-8 text-white px-4">
+                <div className="absolute bottom-5 left- text-white px-4">
                     <h1 className="text-4xl md:text-5xl font-bold animate-fade-in-up">{project.title}</h1>
                     <p className="text-lg font-light mt-4 opacity-80">An immersive journey into {project.title}</p>
                 </div>
             </div>
 
             {/* Project Details Section */}
-            <div className="px-6 py-12 md:py-20 bg-white dark:bg-slate-800 shadow-xl rounded-lg mx-auto mt-12 max-w-3xl transform transition duration-500 ease-in-out hover:shadow-2xl">
+            <div className=" flex-row content-center h-[50vh]  md:mt-10  p-5 bg-white dark:bg-slate-800 shadow-xl rounded-t-xl mx-auto  max-w-3xl transform transition duration-500 ease-in-out hover:shadow-2xl">
                 <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 dark:text-white text-center mb-6">{project.title}</h2>
                 <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed text-center md:mt-4">
                     {project.description}

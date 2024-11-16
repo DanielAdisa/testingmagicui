@@ -6,6 +6,7 @@ import todo from "../assets/projects/todoapp1.jpg"
 import firstport from "../assets/projects/firstport.jpg"
 import foods from "../assets/projects/FOODS.jpg"
 import lager from "../assets/projects/LAGER.jpg"
+import zearchi from "../assets/projects/zearchitects.png"
 import desire from "../assets/projects/1.png"
 import image1 from "../assets/projects/room.png"
 import image2 from "../assets/projects/TokSoup.png"
@@ -232,6 +233,14 @@ export const PROJECTS = [
 ];
 
 export const PROJECTSDEV = [
+  {
+    title: "ZE Architects",
+    image: zearchi,
+    description:
+      "ZE Architecture is an architectural firm based in Dublin",
+    technologies: ["Next JS", "GITBASH", "Tailwind"],
+    link: "https://ze-architectsdotcom.vercel.app/",
+  },
   {
     title: "LitePay App",
     image: litepay,
