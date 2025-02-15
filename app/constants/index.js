@@ -4,6 +4,8 @@ import doom from "../assets/projects/doom.png"
 import oglav from "../assets/projects/oglav.png"
 import todo from "../assets/projects/todoapp1.jpg"
 import firstport from "../assets/projects/firstport.jpg"
+import kardifyme from "../assets/projects/kardifyme.jpg"
+import misfits from "../assets/projects/misfits.jpg"
 import foods from "../assets/projects/FOODS.jpg"
 import lager from "../assets/projects/LAGER.jpg"
 import zearchi from "../assets/projects/zearchitects.png"
@@ -233,6 +235,22 @@ export const PROJECTS = [
 ];
 
 export const PROJECTSDEV = [
+  {
+    title: "Misfit For Christ",
+    image: misfits,
+    description:
+      "We are on a mission to facilitate spiritual transformation through digital ministry.",
+    technologies: ["Next JS", "GITBASH", "Tailwind"],
+    link: "https://www.misfits4christ.com/",
+  },
+  {
+    title: "KardifyMe",
+    image: kardifyme,
+    description:
+      "Revolutionize Your Digital Identity. Next-generation digital cards powered by AI-driven design and blockchain-verified authenticity. ",
+    technologies: ["Next JS", "GITBASH", "Tailwind"],
+    link: "https://kardifyme.vercel.app/",
+  },
   {
     title: "ZE Architects",
     image: zearchi,
